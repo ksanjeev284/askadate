@@ -10,22 +10,24 @@ interface LandingPageProps {
 
 export function LandingPage({ name, onContinue }: LandingPageProps) {
   return (
-    <motion.div 
+    <motion.main 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-100 to-rose-100"
     >
       <FallingPetals />
       
-      <motion.div
+      <motion.article
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.5 }}
         className="text-center z-10"
       >
-        <h1 className="text-4xl md:text-6xl font-dancing text-rose-700 mb-8">
-          Hey {name}...
-        </h1>
+        <header>
+          <h1 className="text-4xl md:text-6xl font-dancing text-rose-700 mb-8">
+            Hey {name}...
+          </h1>
+        </header>
         
         <motion.div
           animate={{ 
@@ -49,7 +51,7 @@ export function LandingPage({ name, onContinue }: LandingPageProps) {
         >
           Click to continue
         </button>
-      </motion.div>
-    </motion.div>
+      </motion.article>
+    </motion.main>
   );
 }

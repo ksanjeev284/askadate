@@ -75,8 +75,9 @@ export function DateOptions({ onSelect }: DateOptionsProps) {
               <div className="h-48 overflow-hidden">
                 <img
                   src={option.image}
-                  alt={option.title}
+                  alt={`${option.title} - ${option.description}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               
