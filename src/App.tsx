@@ -5,6 +5,7 @@ import { DateOptions } from './components/DateOptions';
 import { Celebration } from './components/Celebration';
 
 interface DateOption {
+  icon: JSX.Element;
   title: string;
   time: string;
   location: string;
@@ -27,7 +28,7 @@ export default function App() {
     <LandingPage key="landing" name={girlfriendName} onContinue={() => setCurrentStep(1)} />,
     <MainQuestion key="question" onAccept={() => setCurrentStep(2)} />,
     <DateOptions key="options" onSelect={handleDateSelection} />,
-    <Celebration key="celebration" selectedDate={selectedDate} />
+    selectedDate ? <Celebration key="celebration" selectedDate={selectedDate} /> : null
   ];
 
   return steps[currentStep];

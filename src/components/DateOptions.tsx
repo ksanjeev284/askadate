@@ -100,6 +100,33 @@ export function DateOptions({ onSelect }: DateOptionsProps) {
       location: "Secret Garden Cafe, Film Nagar",
       note: "Let's count stars and make wishes together 🌟",
       image: "https://images.unsplash.com/photo-1532798369041-b33eb576ef16?auto=format&fit=crop&w=800"
+    },
+    {
+      icon: <Music className="w-8 h-8" />,
+      title: "Karaoke Night",
+      description: "Sing your heart out and have fun together",
+      time: "Saturday, 8:00 PM",
+      location: "Melody Box, Jubilee Hills",
+      note: "Let's make beautiful music together 🎤",
+      image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800"
+    },
+    {
+      icon: <Coffee className="w-8 h-8" />,
+      title: "Cooking Class",
+      description: "Learn to cook a romantic meal together",
+      time: "Saturday, 3:00 PM",
+      location: "Culinary Studio, Banjara Hills",
+      note: "The best ingredients are love and laughter 👩‍🍳",
+      image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800"
+    },
+    {
+      icon: <Star className="w-8 h-8" />,
+      title: "Escape Room Adventure",
+      description: "Solve mysteries and puzzles together",
+      time: "Saturday, 2:00 PM",
+      location: "Mystery Rooms, Gachibowli",
+      note: "Let's unlock the mystery of our hearts 🔍",
+      image: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800"
     }
   ];
 
